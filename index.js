@@ -12,7 +12,6 @@ function convert(url) {
 
         // Navigates to the website
         await page.goto(url);
-
         // Generates a PDF from the page content
         await page.pdf({ path: 'overview.pdf' });
         console.log("website got Converted")
