@@ -18,9 +18,13 @@ function convert(url) {
         await browser.close();
     })();
 }
+//Home page
+app.get("/",(req,res)=>{
+  res.sendFile(path.resolve(__dirname, "index.html"));
+})
 
 // Display the pdf file
-app.get("/", (req, res) => {
+app.get("/Convert", (req, res) => {
     res.sendFile(path.resolve(__dirname, "overview.pdf"));
 })
 
