@@ -44,16 +44,9 @@ app.listen(4000, () => {
 
 
 
-
-
-
-
-
-
 /*
 const puppeteer = require('puppeteer');
 const fs = require("fs");
-
 
 (async () => {
   const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
@@ -70,13 +63,6 @@ const fs = require("fs");
   console.log("its Done !!");
   await browser.close();
 })();
-
-
-
-
-
-
-
 
 
 // require fs and puppeteer
